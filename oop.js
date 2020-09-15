@@ -1,17 +1,22 @@
-function movies (name, genre, year)
+function Movie (name, genre, year)
 {
   this.name= name;
   this.genre=genre;
   this.year=year;
 }
-movies.protoype.print=function()
+Movie.protoype.print=function()
 {
   console.log(`${this.name} is a ${this.genre} that was released in ${this.year}`);
 }
-const moviea = new movies('starwars' , 'Sci-Fi', 1976); 
-moviea.print();
+const starwars = new Movie('starwars', 'Sci-Fi', 1976);
 
-const movieb = new movies('the terminator' , 'Sci-Fi', 1984); 
-movieb.print();
 
-const moviec = new 
+const theterminator = new Movie('the terminator', 'Sci-Fi', 1984);
+
+
+const groundhogday = new Movie('groundhog day', 'Comedy', 1993);
+
+const movies = [starwars, theterminator, groundhogday];
+movies.forEach(Movie => {
+    Movie.print();
+});
