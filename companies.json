@@ -1,0 +1,15 @@
+
+[
+  {
+   "name":"google",
+   "num of employees":10,
+   "ceo":"Mary",
+   "rating":3.6 
+  },
+  {
+   "name":"startup",
+   "num of employees":3,
+   "ceo":null,
+   "rating":4.0 
+  }
+]
