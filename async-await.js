@@ -11,6 +11,7 @@ const getZ = () => getNumber(2);
 
 async function sumData()
 {
+
 const x = await getX();
 const y = await getY();
 const z = await getZ();
