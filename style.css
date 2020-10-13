@@ -1,0 +1,148 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%; 
+  margin: 0px; 
+  padding: 0px;
+}
+
+h2 {
+  text-align: center;
+}
+
+p {
+  margin: 0pt 10pt;
+  padding: 10pt 10pt;
+}
+
+img {
+  padding: 10pt;
+  align-self: center;
+}
+
+footer {
+  padding: 10pt;
+  width: 100%;
+  margin-bottom: -50px;
+}
+
+a {
+  padding: 12px 4px;
+  margin: 10px;
+  text-decoration: none;
+}
+
+.menu li {
+  list-style-type: none; 
+}
+
+/* flex */
+
+.flex-container {
+  display: flex;  
+}
+
+.flex-start {
+  justify-content: flex-start;
+}
+
+.flex-center {
+  justify-content: center;
+}
+
+.flex-end {
+  justify-content: flex-end;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-space-between {
+  justify-content: space-between;
+}
+
+.flex-space-around {
+  justify-content: space-around;
+}
+
+/*Shared Styling */
+.full-height {
+  height: 100%;
+}
+
+.blue-background {
+  background: rgb(93, 151, 234);
+}
+
+.silver-background {
+  background: silver;
+}
+
+.white-text, a {
+  color: white;
+}
+
+.signup-button {  
+  background-color: rgb(93, 151, 234); 
+  border: none;
+  color: black;
+  padding: 12px 15px;
+  margin: 10px;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+/* Responsive Website */
+
+.menu {
+  order: 0;
+}
+
+.sidebar {
+  align-content: center;
+  flex: 0 0 300px;
+  min-width: 300px;
+}
+
+.sidebar-left {
+  flex-grow: 1;
+  order: 0;
+}
+
+.article-content {
+  flex-grow: 3;
+  order: 1;
+}
+
+.sidebar-right {
+  flex-grow: 1;
+  order: 2;
+}
+
+.flex1 {
+  order: 1;
+}
+
+.flex6 {
+  order: 6;
+}
+
+
+@media all and (max-width: 991px) {
+  .flex-container { 
+    flex-direction: column;
+  }
+  .menu {
+    order: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .sidebar {
+    order: 1;
+  }
+}
